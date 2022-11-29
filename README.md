@@ -23,8 +23,9 @@ vagrant ssh master
 scp vagrant@kmaster.example.com:~/.kube/config ~/.kube/
 #password for vagrant is vagrant
 ```
+### appliction ref https://github.com/dockersamples/example-voting-app.git
 
-## build docker images  and push it to your registry
+### build docker images  and push it to your registry
 ```
 docker build -t <img-name> .
 docker tag <img-name> gcr.io/<project-id>/<img-name>
